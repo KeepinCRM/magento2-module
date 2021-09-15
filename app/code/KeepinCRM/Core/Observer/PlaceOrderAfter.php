@@ -2,10 +2,7 @@
 
 namespace KeepinCRM\Core\Observer;
 
-use Magento\Framework\App\Config\ScopeConfigInterface;
-use Magento\Store\Model\ScopeInterface;
 use Magento\Framework\Event\ObserverInterface;
-use Magento\Sales\Api\Data\OrderExtensionInterface;
 
 use \Magento\Framework\Event\Observer as Observer;
 use \KeepinCRM\Core\Helper\Data as Helper;
