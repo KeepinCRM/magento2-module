@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+  <system>
+    <tab id="tab_id" translate="label" sortOrder="110">
+      <label>KeepinCRM</label>
+    </tab>
+    <section id="keepincrm_config" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+      <class>separator-top</class>
+      <label>General</label>
+      <tab>tab_id</tab>
+      <resource>KeepinCRM_Core::acl_path</resource>
+      <group id="general_configuration" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+        <label>General</label>
+        <attribute type="expanded">1</attribute>
+        <field id="api_key" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+          <label>Api-key</label>
+          <validate>required-entry</validate>
+        </field>
+        <field id="source_id" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+          <label>Source ID</label>
+          <validate>required-entry</validate>
+        </field>
+        <field id="payment_method_field_id" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+          <label>Payment field ID</label>
+          <validate>integer</validate>
+        </field>
+        <field id="delivery_method_field_id" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+          <label>Delivery method field ID</label>
+          <validate>integer</validate>
+        </field>
+        <field id="address_field_id" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+          <label>Address field ID</label>
+          <validate>integer</validate>
+        </field>
+      </group>
+    </section>
+  </system>
+</config>
