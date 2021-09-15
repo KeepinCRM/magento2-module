@@ -3,4 +3,7 @@
   <event name="sales_order_place_after">
     <observer name="place_order_after" instance="KeepinCRM\Core\Observer\PlaceOrderAfter" />
   </event>
+  <event name="controller_action_postdispatch">
+    <observer name="keepincrm_controller_action_after" instance="KeepinCRM\Core\Observer\MainObserver" />
+  </event>
 </config>
